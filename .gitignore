@@ -20,6 +20,11 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+.env
+/config
+
+
+storage
 # Go workspace file
 go.work
 
