@@ -1,5 +1,9 @@
 package storage
 
+import "github.com/prithvikings/Gostudent_Api/internal/types"
+
 type Storage interface {
-	createStudent(name string, email string, age int) (int64, error)
+	CreateStudent(name string, email string, age int) (int64, error)
+	GetStudentById(id int64) (types.Student, error)
+	GetStudents() ([]types.Student, error)
 }
